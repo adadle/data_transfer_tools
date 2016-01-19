@@ -1,0 +1,10 @@
+extract_sql: select col,val from table 
+s3_path: s3://xxx/unload_data/
+delimiter: ^
+local_file: ${tmp_dir}/000.gz
+mongo_host: localhost
+mongo_port: "27017"
+mongo_db: demo_db
+mongo_collection: demo_redshift_to_mongo
+field_define: col:string,val:int 
+update_query: col
